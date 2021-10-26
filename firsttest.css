@@ -1,0 +1,16 @@
+h1{
+    color:blue;
+}
+
+h2{
+    color:orange;
+}
+
+h3{
+    color:red;
+}
+
+
+input[type=text]:focus {
+    background-color: lightcyan;
+  }
