@@ -1,0 +1,69 @@
+h1{
+    color:blue;
+}
+
+h2{
+    color:orange;
+}
+
+h3{
+    color:black;
+}
+
+input[type=text]:focus {
+    background-color: lightcyan;
+}
+
+body {background-color: coral;}
+
+table {
+    background-color:black ;
+}
+
+td{
+    background-color:mediumseagreen;
+}              
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: relative; /* Set the navbar to a relative position */
+    top: 0; /* Position the navbar at the top of the page */
+    width:99.9%; /* 99.9% width so there is a gap on both sides of the page*/
+  }
+  
+  /* Links inside the navbar */
+  .navbar a {
+    float:left;
+    display:block ;
+    color: white;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change background on mouse-over */
+  .navbar a:hover {
+    background: black;
+    color: white;
+  }
+  
+  /* Main content */
+  .main {
+    margin-top: 30px; /* Add a top margin to avoid content overlay */
+  }
+
+  
+  /*div {
+    background-color: lightgrey;
+    width: 100px;
+    border: 55px solid green;
+    padding: 55px;
+    margin: 20px;
+  }*/
