@@ -5,57 +5,52 @@
     </html>
     <body>
 
-      <div class="navbar">
-        <a href="C:\Users\domin\OneDrive\Desktop\html code\home.html">Home</a>
-        <a href="C:\Users\domin\OneDrive\Desktop\html code\portfolio.html">Portfolio</a>
-        <a href="C:\Users\domin\OneDrive\Desktop\html code\about_me.html">About Me</a>
-        <a href="C:\Users\domin\OneDrive\Desktop\html code\contact_me.html">Contact Me</a>
-        <input type="text" placeholder="Search..." ><br><br>
+      <div class="header">
+        <pre> WELCOME TO MY WEBPAGE!</pre>
+      </div>
 
-      </div><br><br><br><br>
+      <div style="text-align:center">
+        <a href="home.html">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="portfolio.html">Portfolio</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="about_me.html">About Me</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="contact_me.html">Contact Me</a>
+      </div>
 
-        <p><b><h3>Welcome to my Webpage!! Here's a picture of me in the wild (and when programming in HTML and CSS) :)<h3><b></p>
-          <a href="/images/myw3schoolsimage.jpg" download="w3logo">
-            <img src="C:\Users\domin\OneDrive\Desktop\tiger.JPG" alt="W3Schools" class="center">
-          </a>
-
-
+            
             <table>
-             <caption><h3>My Data Table<h3></caption>
               <tr>
-                <td><h3>First name:</h3></td>
-                <td>Column 2</td>
+                <th>Favorite Sport</th>
+                <th>Basketball</th> 
               </tr>
 
               <tr>
-                <td><h3>Last name:</h3></td>
-                <td>Cell 1</td>
+                <td>All sports</td>
+                <td>are great</td>
+              </tr>
+              <tr>
+                <td>But basketball</td>
+                <td>is better</td>
               </tr>
 
               <tr>
-                <td><h3>Email address:<h3></td>
-                <td>Cell 2</td>
-              </tr>
-    
-              <tr>
-                <td ><h3>Favorite Sport:</h3></td>
-                <td>Cell 3</td>
-              </tr>
 
-              <tr>
-                <td><h3>Comments/Questions:<h3></td>
-                <td>Cell 4</td>
+                <td>Don't hate</td>
+                <td>it's true</td>
               </tr>
+              <tr>
+
+                <td>Tigers are awesome</td>
+                <td>See you soon</td>
+              </tr><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
             </table>
-
 
             <style>
               table {
-
-                  /*margin-left: auto;*/
-                  margin-right: auto;
+                  
+                  margin-right:auto;
                   font-size: 13px;
-                  width: 75%;
+                  width: 30%;
                   table-layout:fixed;               
               }
           
@@ -63,21 +58,21 @@
                   border: 2px solid black;
                   text-align: center;
                   padding: 10px;
-              }            
+              }  
           </style>
   
-        <p>Enter your information in the fields below to tell me more about yourself</p>
+        <pre><h3>                                                                   Enter your information in the fields below to tell me more about yourself<h3></pre>
         <div class="container">
           <form action="action_page.php" formmethod="get">
         
             <label for="fname">First Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="Enter your first name...">
+            <input type="text" id="fname" name="firstname" placeholder="Enter your first name...">&nbsp;&nbsp;
         
             <label for="lname">Last Name</label>
-            <input type="text" id="lname" name="lastname" placeholder="Enter your last name...">
+            <input type="text" id="lname" name="lastname" placeholder="Enter your last name...">&nbsp;&nbsp;
 
             <label for="email">Email</label>
-            <input type="text" id="email" name="email" placeholder="Enter your email address...">
+            <input type="text" id="email" name="email" placeholder="Enter your email address...">&nbsp;&nbsp;
         
             <label for="sport">What is your favorite sport?</label>
             <select id="sport" name="sport">
@@ -85,15 +80,21 @@
               <option value="Football">Football</option>
               <option value="Baseball">Baseball</option>
               <option value="Soccer">Soccer</option>
-              <option value="Hockey">Hockey</option>             
+              <option value="Hockey">Hockey</option>&nbsp;&nbsp;             
             </select>
         
             <label for="subject">Comments or questions?</label>
-            <textarea id="subject" name="subject" placeholder="Questions/Comments.." style="height:100px"></textarea>
             <input type="submit" value="Submit">
              
           </form>
-        </div> <br><br>
+        </div><br><br>
+
+        <div class="footer">
+          <p>Thanks for Visiting!</p>
+        </div>
+
+
+        
     
     </body>
 </html>
