@@ -5,24 +5,49 @@
     </html>
     <body>
 
+    
       <div class="header">
-        <pre> WELCOME TO MY WEBPAGE!</pre>
+        <pre>WELCOME TO DOMINICK'S WEBPAGE!</pre>
       </div>
 
       <div style="text-align:center">
-        <a href="home.html">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="intro.html">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <a href="portfolio.html">Portfolio</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <a href="about_me.html">About Me</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <a href="contact_me.html">Contact Me</a>
       </div>
 
+      <button onclick="myFunction()">Enter Your Name</button>
+
+      <p id="demo"></p>
+      <p id="demo0"></p>
+      <p id="demoux"></p>
+
+      <script>
+      const d = new Date();
+      const m = new Date();
+      function myFunction() {
+        let text;
+        let person = prompt("Please enter your name:", "");
+        if (person == null || person == "") {
+          text = "You suck because you wouldn't tell me your name. I will find out anyway";
+        } else {
+          text = "Hello " + person + "! Thank you for visiting my resume site!";
+        }
+                                                                                                                                                                         
+        document.getElementById("demo").innerHTML = text;                                           
+        document.getElementById("demo0").innerHTML = d.getHours();
+        document.getElementById("demoux").innerHTML=m.getMinutes();
+        }
+      </script>
+                                                                                                                                                                                                                                                               
+     
+
+      
+
             
             <table>
-              <tr>
-                <th>Favorite Sport</th>
-                <th>Basketball</th> 
-              </tr>
-
+              
               <tr>
                 <td>All sports</td>
                 <td>are great</td>
@@ -33,32 +58,27 @@
               </tr>
 
               <tr>
-
                 <td>Don't hate</td>
                 <td>it's true</td>
               </tr>
-              <tr>
 
+              <tr>
                 <td>Tigers are awesome</td>
                 <td>See you soon</td>
-              </tr><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+              </tr><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
             </table>
 
             <style>
-              table {
-                  
+              table {                                    
+                  margin-left:auto;
                   margin-right:auto;
                   font-size: 13px;
                   width: 30%;
                   table-layout:fixed;               
               }
           
-              td {
-                  border: 2px solid black;
-                  text-align: center;
-                  padding: 10px;
-              }  
+              
           </style>
   
         <pre><h3>                                                                   Enter your information in the fields below to tell me more about yourself<h3></pre>
@@ -76,6 +96,7 @@
         
             <label for="sport">What is your favorite sport?</label>
             <select id="sport" name="sport">
+              <option value=""></option>
               <option value="Basketball">Basketball</option>
               <option value="Football">Football</option>
               <option value="Baseball">Baseball</option>
@@ -95,6 +116,7 @@
 
 
         
-    
+
+       
     </body>
 </html>
