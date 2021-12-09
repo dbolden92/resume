@@ -40,12 +40,7 @@
         document.getElementById("demoux").innerHTML=m.getMinutes();
         }
       </script>
-                                                                                                                                                                                                                                                               
-     
-
-      
-
-            
+              
             <table>
               
               <tr>
@@ -113,6 +108,109 @@
         <div class="footer">
           <p>Thanks for Visiting!</p>
         </div>
+
+
+        <table>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Relation to Me</th>
+            </tr>
+          </thead>
+          <tbody id="tbreferences">
+          <tr>
+            <td>1</td>
+            <td>Gopal</td>
+            <td>Pai</td>
+            <td>Former coworker</td>
+          
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Kruthi</td>
+            <td>Nagaraja</td>
+            <td>Former Coworker</td>
+          </tr>
+
+          <tr>
+            <td>3</td>
+            <td>Rodger</td>
+            <td>Schelin</td>
+            <td>Former coworker</td>
+
+          </tr>
+
+          <tr>
+            <td>4</td>
+            <td>Daniel</td>
+            <td>Lauritzen</td>
+            <td>Former Manager</td>
+
+          </tr>
+          </tbody>
+
+
+
+
+
+
+        </table>
+
+
+
+
+        <script>
+          const references=[
+            {
+              first:'clifton',
+              last:'bolden',
+              relation:'brother',
+            },
+
+            {
+              first:'gopal',
+              last:'pai',
+              relation:'former coworker',
+            },
+
+            {
+              first:'rodger',
+              last:'schelin',
+              relation:'former coworker',
+            },
+
+            {
+              first:'kruthi',
+              last:'nagaraja',
+              relation:'formwer coworker',
+            }
+          ]
+          for(let i=0;i<references.length;i++){
+            let reference=references[i]
+          }
+
+          let tbreferences=document.getElementById('tbreferences')
+          references.forEach((reference, index) => {
+            let referenceTr = document.createElement('tr')
+            let number = document.createElement('td')
+            let first = document.createElement('td')
+            let last = document.CreateElement('td')
+            let relatino = document.createelement('td')
+            number.innerHTML = index+1
+            first.innerHTMl=referencfe.first
+            last.innerHTML = reference.last
+            relation.innerHTMl = reference.relation
+            referenceTr.append(number)
+            referenceTr.append(first)
+            referenceTr.append(last)
+            referenceTr.append(relation)
+          })
+          </script>
+
+
+
 
 
         
